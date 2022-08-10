@@ -1,12 +1,12 @@
-image: rancher/hardened-build-base:{{build.tag}}
+image: niusmallnan/hardened-build-base:{{build.tag}}
 manifests:
   -
-    image: rancher/hardened-build-base:{{build.tag}}-amd64
+    image: niusmallnan/hardened-build-base:{{build.tag}}-amd64
     platform:
       architecture: amd64
       os: linux
   -
-    image: rancher/hardened-build-base:{{build.tag}}-s390x
+    image: niusmallnan/hardened-build-base:{{build.tag}}-arm64
     platform:
-      architecture: s390x
+      architecture: arm64
       os: linux
